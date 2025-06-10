@@ -1,0 +1,174 @@
+.background {
+    position: absolute;
+    top: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1700px;
+    height: 240px;
+    background: #fff;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 1;
+    padding: 25px 50px;
+}
+/* 백그라운드 전체 움직이기 */
+
+.background .linkBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkBar .links {
+}
+.linkBar .links .custom-select-wrap {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.linkBar .links .custom-select-wrap p i {
+    font-size: 20px;
+    line-height: 75px;
+    color: #888894;
+}
+.custom-select-wrap .custom-select {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 8px;
+    background: white;
+    margin: 0 5px;
+    position: relative;
+    display: block;
+    /* width: 150px; */
+}
+
+.custom-select-wrap .custom-select::after {
+    content: '';
+    background-image: url(../images/icon/arrowdown.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.custom-select-wrap .custom-select.open::after {
+    background-image: url(../images/icon/arrowup.png);
+}
+.custom-select-wrap .custom-select::before {
+    content: '';
+    width: 1px;
+    height: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: #000;
+}
+
+.custom-select .selected {
+    padding: 20px;
+    /* transition: all 0.2s; */
+}
+
+.custom-select .options {
+    padding: 6px 0;
+    outline: 1px solid #000;
+    border-top: none;
+    border-radius: 6px;
+    display: none;
+    position: absolute;
+    width: 138px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+.custom-select .options li {
+    padding: 5px;
+    transition: all 0.2s;
+    font-size: 16px;
+    position: relative;
+}
+.custom-select .options li span {
+    display: block;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+.custom-select .options li span:hover {
+    background: rgb(242, 244, 246);
+    color: RGB(1, 73, 154);
+}
+.custom-select .options li span img {
+    opacity: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+}
+.custom-select .options li:hover span img {
+    opacity: 1;
+    /* filter: invert(1); */
+}
+/* .custom-select .options li:hover::after {
+    content: '>';
+    position: absolute;
+    right: 10px;
+} */
+.custom-select.open .options {
+    display: block;
+}
+/* 백그라운드 > 좌상단 카테고리 */
+
+.background .linkBar .icons {
+    display: flex;
+    align-items: center;
+}
+.background .linkBar .icons li {
+    cursor: pointer;
+    padding-right: 40px;
+    position: relative;
+}
+.background .linkBar .icons li:last-child {
+    padding-right: 0;
+}
+.background .linkBar .icons li img {
+    width: 32px;
+}
+.background .linkBar .icons li::after {
+    content: '';
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    width: 1px;
+    height: 20px;
+    background: #000;
+}
+.background .linkBar .icons li:last-of-type::after {
+    display: none;
+}
+/* 백그라운드 > 우상단 카테고리 */
+.background h2 {
+    font-size: 42px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 114px;
+    transform: translateX(-50%);
+}
+.background h2::after {
+    content: '';
+    background: grey;
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+/* 백그라운드 제목 */
+
+/* 백그라운드 */

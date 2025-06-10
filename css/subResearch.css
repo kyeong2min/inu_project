@@ -1,0 +1,125 @@
+h2,
+h3,
+h4,
+p,
+strong,
+em {
+    letter-spacing: -1px;
+    font-family: 'Noto Sans Kr';
+}
+#wrap {
+    width: 100%;
+    min-width: 1600px;
+}
+.article .inner {
+    width: 1500px;
+}
+.inner .container {
+    margin: 160px 0 100px;
+}
+.inner .container .article {
+    margin: auto;
+    width: 1500px;
+}
+.wrapBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 453px;
+    background: url(../images/subResearch/Background1.png) no-repeat center;
+    margin-bottom: 61px;
+}
+.wrapBox .text-box {
+    position: relative;
+    padding-left: 150px;
+}
+.wrapBox .text-box .title {
+    margin-bottom: 20px;
+    position: relative;
+}
+.wrapBox .text-box .title::before {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top: -7px;
+    width: 65px;
+    height: 54px;
+    background-image: url(../images/subResearch/Vector.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapBox .text-box .title::after {
+    content: '';
+    position: absolute;
+    right: 75px;
+    bottom: -6px;
+    width: 65px;
+    height: 54px;
+    background-image: url(../images/subResearch/Vector-1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapBox .text-box .title strong {
+    font-size: 50px;
+    display: flex;
+    color: #fff;
+    width: 288px;
+    font-weight: 600;
+}
+.wrapBox .text-box .title strong:nth-child(2) {
+    margin-bottom: 53px;
+    margin-left: 50px;
+}
+.wrapBox .text-box p {
+    width: 515px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+.wrapBox .img-box img {
+    width: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+.inner .textT {
+    width: 1400px;
+}
+.inner .textT strong {
+    position: relative;
+    font-size: 40px;
+    font-weight: 400;
+}
+.inner .textT strong::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 28px;
+    background-color: #fdaf17;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.inner .content {
+    position: relative;
+    margin-top: 50px;
+    width: 1500px;
+}
+.inner .content p {
+    font-size: 18px;
+    margin: 0;
+    margin-top: 34px;
+    color: #333333;
+}
+.inner .content img {
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 380px;
+}
+.inner .content p span {
+    font-weight: 700;
+}

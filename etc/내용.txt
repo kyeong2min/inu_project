@@ -1,0 +1,21 @@
+1. 작성자 만들기 (meta name)
+ <meta name="title" content="" />
+        <meta name="robots" content="index,follow" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="copyright" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="logo.png" /
+2. 헤더, 푸터 style.css
+3. 스크롤 변형
+
+css 유형
+1) reset.css
+2) style.css
+3) common.css 전체페이지공통
+4) main 메인페이지, 비쥬얼
+5) sub
+
+4. main은 비쥬얼로부터 160px, footer로부터 320(연락처칸 제외)

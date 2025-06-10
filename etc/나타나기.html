@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fade In 효과와 Intersection Observer</title>
+        <style>
+            .pv-box {
+                border: 1px solid black;
+                padding: 10px;
+
+                height: 500px;
+                overflow-y: scroll;
+            }
+            .pv-box img {
+                width: 300px;
+                height: auto;
+            }
+            .pv-box .fade-wrap {
+                /* 나타나는 효과가 1초동안 발생 */
+                transition: 1s;
+
+                /* 투명도 0 (안보임) */
+                opacity: 0;
+
+                /* 왼쪽에서 오른쪽으로 나타나게 하기 위함 */
+                position: relative;
+                left: -50px;
+
+                margin-bottom: 20px;
+            }
+            .pv-box .fade-wrap.fade-in {
+                /* 투명도 0 (보임) */
+                opacity: 1;
+
+                /* 왼쪽에서 오른쪽으로 나타나게 하기 위함 */
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pv-box">
+            <div class="fade-wrap">
+                <h2>첫 번째 섹션</h2>
+                <img src="./images/Background.png" alt="img" />
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+                    voluptatem deleniti quae, nisi quas minus sint explicabo? Similique quae minus
+                    consequuntur sint, commodi placeat hic ullam necessitatibus optio alias?
+                </p>
+            </div>
+            <div class="fade-wrap">
+                <h2>두 번째 섹션</h2>
+                <img src="./img/02.png" alt="img" />
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere optio iure
+                    labore quo cum excepturi fugit, eum ad velit! Placeat velit a officiis
+                    architecto perspiciatis possimus aspernatur nostrum veritatis maiores?
+                </p>
+            </div>
+            <div class="fade-wrap">
+                <h2>세 번째 섹션</h2>
+                <img src="./img/03.png" alt="img" />
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit porro atque
+                    officiis explicabo dolores error ullam. Ea quidem voluptate, ullam odit rem
+                    error, maxime voluptas hic, voluptatem nesciunt eum in!
+                </p>
+            </div>
+            <div class="fade-wrap">
+                <h2>네 번째 섹션</h2>
+                <img src="./img/04.png" alt="img" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus doloremque,
+                    nam deleniti fugit vel totam dolorum placeat architecto consectetur quia
+                    incidunt. Nam, iusto quisquam in vero cum assumenda rerum?
+                </p>
+            </div>
+        </div>
+        <script>
+            /* javascript */
+            // Intersection Observer 생성
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            // 화면에 들어옴
+                            entry.target.classList.add('fade-in');
+                        } else {
+                            // 화면에서 나감
+                            entry.target.classList.remove('fade-in');
+                        }
+                    });
+                },
+                // 화면에서 해당 요소가 10% 이상 보일 경우 화면에 들어온 것으로 판단함
+                { threshold: 0.1 }
+            );
+
+            // 관찰 대상 설정
+            const targetElements = document.querySelectorAll('.fade-wrap');
+            targetElements.forEach((element) => {
+                observer.observe(element);
+            });
+        </script>
+    </body>
+</html>

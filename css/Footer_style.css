@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Play:wght@400;700&display=swap');
+
+body {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Play', 'Noto Sans KR', sans-serif;
+    /* 가로스크롤방지 */
+    overflow-x: hidden;
+}
+.play-regular {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.play-bold {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 전체 스타일 통합 */
+
+#wrap {
+    min-width: 1600px;
+}
+#main,
+.inner {
+    /* width: 1700px; */
+    margin: auto;
+}
+h2,
+h3,
+h4,
+p,
+strong,
+em {
+    letter-spacing: -1px;
+    font-family: 'Noto Sans Kr';
+}
+
+/* 전체 */
+#subVisual {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+#subVisual .subBanner {
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image: url(../images/Background.png);
+    background-position: 0 0;
+    background-size: cover;
+    position: relative;
+}
+/* 비쥬얼 > 이미지 */
+
+.subBanner .container {
+    position: absolute;
+    /* top: 0; */
+    bottom: 240px;
+    width: 100%;
+    z-index: 2;
+}
+.subBanner .container::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+}
+
+.subBanner h2,
+.subBanner p {
+    text-align: center;
+    color: white;
+}
+
+.subBanner h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.subBanner p {
+    padding-top: 50px;
+    font-size: 17px;
+}
+/* 비쥬얼배너 > 컨테이너 */
+/* 전체 적용 */
+#footer {
+    margin: auto;
+    width: 100%;
+    z-index: 1000;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+#footer .colorBox {
+    height: 65px;
+    width: 100%;
+    background: #01499b;
+}
+#footer .link {
+    width: 1700px;
+    margin: auto;
+}
+#footer .link .linkBox {
+    width: 1500px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#footer .link .linkBox li {
+    width: 315px;
+    border-right: 1px solid #fff;
+    background-image: url(../images/icon/up.png);
+    background-repeat: no-repeat;
+    background-position: 218px 50%;
+}
+
+#footer .link .linkBox li a {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+}
+#footer .inner {
+    display: flex;
+    /* margin-top: 35px;
+    margin-bottom: 35px; */
+    max-width: 1500px;
+    box-sizing: border-box;
+    height: 160px;
+    align-items: center;
+}
+#footer .inner h1 {
+    margin-right: 76px;
+}
+#footer .inner .info {
+}
+#footer .inner .info p {
+}
+#footer .inner .info p a {
+    position: relative;
+    margin-right: 20px;
+}
+#footer .inner .info p a:first-child {
+    color: #01499b;
+    font-weight: 600;
+}
+#footer .inner .info p a::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 11px;
+    background: #81a4cc;
+}
+#footer .inner .info p a:last-child::after {
+    background: none;
+}
+#footer .inner .info .address {
+    margin-top: 20px;
+}
+#footer .inner .info .copyright {
+}
+#footer .inner .info .copyright span {
+    font-family: play;
+}
+#footer .inner .sns {
+    width: 244px;
+    height: 160px;
+    /* border: 1px solid #000; */
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+#footer .inner .sns ul {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    /* bottom: 35px; */
+    /* bottom: 0px; */
+}
+#footer .inner .sns ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+}
+#footer .inner .sns ul li:nth-child(4) {
+    margin-right: 0;
+}
+#footer .inner .sns ul li img {
+    width: 32px;
+    height: 32px;
+}
+/* 푸터 */

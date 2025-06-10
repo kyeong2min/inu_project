@@ -1,0 +1,178 @@
+h2,
+h3,
+h4,
+p,
+strong,
+em {
+    letter-spacing: -1px;
+    font-family: 'Noto Sans Kr';
+}
+
+#main .inner .container {
+    width: 1500px;
+    margin: 160px auto 140px auto;
+
+    padding: 20px 0 0 0;
+}
+#main .inner .container .contents-list {
+    padding: 0 50px;
+}
+#main .inner .container .contents-list .contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#main .inner .container .contents-list .contents li {
+    width: 642px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+#main .inner .container .contents-list .contents li:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+#main .inner .container .contents-list .contents li:hover .top {
+    background: #01499b;
+}
+#main .inner .container .contents-list .contents li:hover .line {
+    transform: translateX(0%);
+    opacity: 1;
+}
+#main .inner .container .contents-list .contents li:hover .pic img {
+    opacity: 0.5;
+}
+#main .inner .container .contents-list .contents li:hover .pic p {
+    top: 116px;
+    opacity: 1;
+}
+#main .inner .container .contents-list .contents .top {
+    width: 642px;
+    height: 100px;
+    background: #585858;
+    color: #fff;
+    box-sizing: border-box;
+
+    padding-left: 30px;
+    align-content: center;
+    position: relative;
+}
+
+#main .inner .container .contents-list .contents .top h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+#main .inner .container .contents-list .contents .top p {
+    font-family: 'Play';
+    font-size: 20px;
+}
+#main .inner .container .contents-list .contents .line {
+    height: 4px;
+    background: url(../images/subCollegeAll/CollegeAll\ line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 호버했을때 0으로 만들기!! */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s;
+}
+#main .inner .container .contents-list .contents .pic {
+    position: relative;
+    width: 642px;
+    height: 280px;
+    overflow: hidden;
+    background: #000;
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+#main .inner .container .contents-list .contents .pic img {
+    width: 642px;
+    transform: translateY(-25%);
+
+    opacity: 1;
+    transition: 0.3s;
+}
+#main .inner .container .contents-list .contents .pic p {
+    width: 642px;
+
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+    top: 100px;
+    left: 0px;
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+#main .inner .container .contents-list .contents table td {
+    width: 214px;
+    height: 60px;
+
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+
+    vertical-align: middle;
+    padding-left: 20px;
+
+    cursor: pointer;
+}
+#main .inner .container .contents-list .contents table td span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-11%);
+    width: 16px;
+    height: 18px;
+    margin-left: 10px;
+
+    background: url(../images/subCollegeAll/CollegeAll\ home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main .inner .container .contents-list .contents table tr td:first-of-type {
+    border-left: 1px solid #cccccc;
+}
+#main .inner .container .contents-list .contents table tr:first-child td {
+    border-top: 1px solid #cccccc;
+}
+#main .innerInfo {
+    width: 1500px;
+    height: 140px;
+    background: #f5f5f5;
+    color: #555;
+
+    display: flex;
+    box-sizing: border-box;
+
+    margin: 0 auto 100px auto;
+    align-items: center;
+    padding: 50px;
+}
+#main .innerInfo h5 {
+    margin-right: 80px;
+    position: relative;
+}
+#main .innerInfo h5::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 18px;
+    background: #888;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+}
+#main .innerInfo p {
+    margin-right: 20px;
+}
+#main .innerInfo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

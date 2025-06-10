@@ -1,0 +1,278 @@
+h2,
+h3,
+h4,
+p,
+strong,
+em,
+td {
+    letter-spacing: -1px;
+    font-family: 'Noto Sans Kr';
+}
+
+#main .inner .container {
+    width: 1500px;
+    margin: 160px auto 140px auto;
+
+    padding: 20px 0 0 0;
+}
+#main .inner .container .topTitle {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+}
+#main .inner .container .topTitle p {
+    font-size: 14px;
+    line-height: 40px;
+}
+#main .inner .container .topTitle p span {
+    color: #dd0042;
+}
+#main .inner .container .topTitle .form {
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+#main .inner .container .topTitle .form .filter {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background: #fff;
+
+    font-size: 14px;
+    color: #9e9e9e;
+
+    position: relative;
+
+    overflow: hidden;
+    transition: 0.5s;
+}
+#main .inner .container .topTitle .form .filter.on {
+    height: 100px;
+    border-radius: 25px;
+    background: #fff;
+
+    /* position: absolute; */
+}
+#main .inner .container .topTitle .form .filter .options {
+    padding-left: 20px;
+    padding-top: 4px;
+}
+#main .inner .container .topTitle .form .filter p {
+    padding-left: 20px;
+}
+#main .inner .container .topTitle .form .filter i {
+    position: absolute;
+    top: 20px;
+    transform: translateY(-50%);
+    right: 15px;
+
+    font-size: 22px;
+}
+#main .inner .container .topTitle .form .search-wrap {
+    margin-left: 10px;
+    /* border: 1px solid #000; */
+
+    position: relative;
+}
+#main .inner .container .topTitle .form .search-wrap #search {
+    outline: none;
+    border: none;
+    width: 240px;
+    height: 40px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+#main .inner .container .topTitle .form .search-wrap #search::placeholder {
+    font-size: 14px;
+}
+#main .inner .container .topTitle .form .search-wrap p img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translateY(-50%);
+}
+#main .inner .container .noticeBox {
+    font-size: 16px;
+    margin-top: 60px;
+}
+#main .inner .container .noticeBox .no {
+    width: 80px;
+}
+#main .inner .container .noticeBox .category {
+    width: 140px;
+}
+#main .inner .container .noticeBox .title {
+    width: auto;
+}
+#main .inner .container .noticeBox .writer {
+    width: 170px;
+}
+#main .inner .container .noticeBox .date {
+    width: 160px;
+}
+#main .inner .container .noticeBox .view {
+    width: 80px;
+}
+#main .inner .container .noticeBox .file {
+    width: 110px;
+}
+#main .inner .container .noticeBox .noticeTable {
+}
+#main .inner .container .noticeBox .noticeTable thead {
+    background: #f2f2f2;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+#main .inner .container .noticeBox .noticeTable thead tr {
+}
+#main .inner .container .noticeBox .noticeTable thead tr th {
+    border-bottom: 1px solid #cfcfd1;
+    border-top: 2px solid #7c7c7c;
+}
+#main .inner .container .noticeBox .noticeTable tbody {
+}
+#main .inner .container .noticeBox .noticeTable tbody tr {
+}
+#main .inner .container .noticeBox .noticeTable tbody tr td {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #555;
+
+    border-bottom: 1px solid #cfcfd1;
+}
+
+#main .inner .container .noticeBox .noticeTable tbody tr td i {
+    color: #dd0042;
+}
+#main .inner .container .noticeBox .noticeTable tbody tr td img {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main .inner .container .noticeBox .noticeTable tbody tr td:nth-of-type(2) {
+    color: #01499b;
+    font-weight: 500;
+}
+#main .inner .container .noticeBox .noticeTable tbody tr td:nth-of-type(3) a {
+    display: block;
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px;
+}
+#main .inner .container .noticeBox .paging {
+    width: 100%;
+    margin-top: 60px;
+    /* border: 1px solid #000; */
+
+    position: relative;
+}
+#main .inner .container .noticeBox .paging ul {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+#main .inner .container .noticeBox .paging ul li {
+    font-size: 16px;
+    margin-right: 30px;
+}
+#main .inner .container .noticeBox .paging li:last-child {
+    margin-right: 0;
+}
+#main .inner .container .noticeBox .paging .on a {
+    color: white;
+}
+#main .inner .container .noticeBox .paging .on {
+    position: relative;
+}
+#main .inner .container .noticeBox .paging .on::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #01499b;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+#main .inner .container .noticeBox .paging img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#main .inner .container .bottomTitle {
+    margin-top: 80px;
+    width: 100%;
+    height: 80px;
+    background: #01499b;
+}
+#main .inner .container .bottomTitle p {
+    line-height: 80px;
+    padding-left: 62px;
+    color: white;
+
+    position: relative;
+}
+#main .inner .container .bottomTitle p::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#main .innerInfo {
+    width: 1500px;
+    height: 140px;
+    background: #f5f5f5;
+    color: #555;
+
+    display: flex;
+    box-sizing: border-box;
+
+    margin: 0 auto 100px auto;
+    align-items: center;
+    padding: 50px;
+}
+#main .innerInfo h5 {
+    margin-right: 80px;
+    position: relative;
+}
+
+#main .innerInfo h5::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 18px;
+    background: #888;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+}
+#main .innerInfo p {
+    margin-right: 20px;
+}
+#main .innerInfo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

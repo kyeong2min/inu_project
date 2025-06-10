@@ -1,0 +1,217 @@
+h2,
+h3,
+h4,
+p,
+strong,
+em {
+    letter-spacing: -1px;
+    font-family: 'Noto Sans Kr';
+}
+
+.inner .container {
+    margin: 160px 0 100px;
+}
+.container .article {
+    margin: auto;
+    width: 1400px;
+}
+.container .article .top-header {
+    display: flex;
+    align-items: center;
+}
+.top-header .year {
+    font-size: 54px;
+    font-weight: 700;
+    margin-right: 47px;
+    color: #01499b;
+}
+.top-header .btn {
+    font-size: 45px;
+}
+
+.top-header .prev {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d7d7d7;
+    background: url(../images/subSchedule/year_prev.png) no-repeat center;
+}
+.top-header .next {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: -1px;
+    border: 1px solid #d7d7d7;
+    background: url(../images/subSchedule/year_next.png) no-repeat center;
+}
+
+.top-header .month-selector {
+    margin: auto;
+    cursor: pointer;
+}
+.top-header .month-selector button {
+    position: relative;
+    width: 48px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+.top-header .month-selector button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fdaf17;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.top-header .month-selector button:hover::after {
+    transform: scaleX(1);
+}
+.top-header .month-selector button.on {
+    color: #01499b;
+}
+.calendar-layout {
+    display: flex;
+    border: 1px solid;
+    margin-top: 50px;
+}
+.calendar-layout .panel {
+    width: 500px;
+    border-right: 1px solid #dcdcdc;
+}
+.calendar-layout .panel .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 36px;
+}
+.calendar-layout .panel .calendar-header .month-year {
+    margin: auto;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.calendar-layout .panel .week {
+    display: flex;
+    width: 380px;
+    margin: auto;
+    margin-top: 29px;
+}
+.calendar-layout .panel .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 380px;
+    margin: auto;
+    text-align: center;
+}
+.days div {
+    width: 54px;
+    height: 53px;
+    line-height: 50px;
+}
+.display-selected {
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.calendar-layout .panel .week div {
+    font-size: 14px;
+    width: 54px;
+    height: 32px;
+    background-color: #01499b;
+    font-family: play;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.schedule-panel {
+    flex: 2;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+.schedule-panel.on {
+    opacity: 1;
+}
+
+.schedule-panel .schedule-item {
+    margin-left: 44px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    color: #01499b;
+}
+.schedule-panel .schedule-item span {
+    color: #666666;
+    margin-left: 56px;
+}
+.schedule-panel .schedule-item:first-child,
+.schedule-panel .schedule-item span:first-child {
+    margin-top: 50px;
+}
+
+.current-date {
+    background: #ececec;
+}
+
+.warning {
+    text-align: right;
+    margin-top: 20px;
+}
+.warning p {
+    display: inline-block;
+    padding-left: 35px;
+    position: relative;
+    font-size: 15px;
+    background: url(../images/subSchedule/ic_alert.png) no-repeat left center;
+}
+
+#main .innerInfo {
+    width: 1500px;
+    height: 140px;
+    background: #f5f5f5;
+    color: #555;
+    display: flex;
+    box-sizing: border-box;
+    margin: 100px auto;
+    align-items: center;
+    padding: 50px;
+}
+#main .innerInfo h5 {
+    margin-right: 80px;
+    position: relative;
+}
+#main .innerInfo h5::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 18px;
+    background: #888;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+}
+#main .innerInfo p {
+    margin-right: 20px;
+}
+#main .innerInfo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

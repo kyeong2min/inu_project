@@ -1,0 +1,329 @@
+/* 비쥬얼배너 > 컨테이너 */
+/* 비쥬얼-배너 */
+/* 백그라운드 있었던 자리 */
+
+#main .info {
+    width: 1500px;
+    height: fit-content;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+/* 섹션 전체 움직이기 */
+
+#main .info .nav .list {
+    margin: auto;
+    width: 1515px;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+#main .info .nav .list li {
+    display: block;
+    width: 300px;
+    font-size: 15px;
+    line-height: 48px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+/* .info .nav .list li{} */
+
+#main .info .nav .list li:nth-child(1) {
+    background: #01499b;
+    border: 1px solid #01499b;
+}
+#main .info .nav .list li:nth-child(1) a {
+    color: white;
+}
+#main .info .nav .list li:hover {
+    background: #01499b;
+    border: 1px solid #01499b;
+}
+#main .info .nav .list li:hover a {
+    color: white;
+}
+/* 컨테이너 > 네비게이션 */
+
+.article {
+    margin-top: 60px;
+}
+.article .box {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.article .box h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+/* article 전체 */
+.article .box1 {
+    display: flex;
+}
+.article .box1 .left {
+    width: 560px;
+}
+
+.article .box1 .left .imgBox {
+    position: relative;
+}
+.article .box1 .left .imgBox img {
+    position: absolute;
+}
+.article .box1 .left .imgBox img:first-of-type {
+    left: 0;
+    top: 0;
+}
+.article .box1 .left .imgBox img:last-of-type {
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+.article .box1 .right {
+    right: 0;
+    width: 970px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article .box1 .right .text {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+.article .box .right strong {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222222;
+}
+.article .box .right p {
+    font-size: 18px;
+
+    color: #666666;
+}
+.article .box .right .list {
+    margin: 60px 30px;
+    display: flex;
+    bottom: 0;
+}
+.article .box .right .list li {
+    padding-left: 30px;
+    position: relative;
+    line-height: 110%;
+    margin-left: 80px;
+}
+.article .box .right .list li:nth-child(1) {
+    margin-left: 20px;
+}
+.article .box .right .list li::after {
+    content: '';
+    background: #c7cbd7;
+    width: 1px;
+    height: 31px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+}
+
+.article .box .right .list li:last-child:after {
+    display: none;
+}
+
+.article .box .right .list li strong {
+    color: RGB(1, 73, 154);
+    font-size: 12px;
+}
+.article .box .right .list li p {
+    color: #2b2a2b;
+    font-size: 12px;
+}
+.article .box .right .list li i {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+/* article > .box1*/
+.article .box2 {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.article .box2 h2 {
+    margin-bottom: 0px;
+}
+.article .box2 img {
+    margin: 25px auto;
+}
+.article .box2 .imgBox {
+    box-sizing: border-box;
+    border: 1px solid #01499b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 210px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.article .box2 .imgBox img {
+    width: 30px;
+}
+.article .box2 .imgBox p {
+    font-size: 16px;
+    color: #01499b;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-weight: 500;
+}
+/* article > .box2 */
+
+.article .box3 {
+}
+.article .box3 .text {
+}
+.article .box3 .text h2 {
+}
+.article .box3 .text p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* article > .box3 */
+.article .box4 {
+    /* flex-direction: column; */
+    /* background: #000; */
+    /* padding-left: 40px; */
+}
+.article .box4 .text {
+    padding: 10px 40px;
+
+    width: 100%;
+    /* background: pink; */
+    /* border: 1px solid yellow; */
+    display: flex;
+}
+.box4 .li_title {
+}
+.box4 .li_title h3 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #01499b;
+    font-family: 'play';
+}
+.box4 .li_title h3 span {
+    margin-left: 2px;
+    font-size: 20px;
+}
+.box4 .li_con {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.box4 .li_con strong {
+    font-size: 24px;
+    color: #fdaf17;
+    font-weight: bold;
+    font-family: 'play';
+}
+.box4 .li_con em {
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+.box4 .li_con em::after {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 10px;
+    left: 0;
+    top: 50%;
+}
+
+/* article > .box4 */
+.article .box5 {
+}
+.box5 h2 {
+}
+.box5 .table {
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-collapse: separate;
+}
+.box5 .table caption {
+}
+.box5 .table col {
+    width: 250px;
+}
+
+.box5 .table th,
+.box5 .table td {
+    border: 1px solid #d7dee3;
+    vertical-align: middle;
+    padding: 13px;
+    font-weight: 500;
+}
+
+.box5 .table tr {
+}
+.box5 .table th {
+    background: #f5f7f8;
+}
+.box5 .table td {
+}
+.box5 .table td i {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* article > .box5 */
+
+.innerInfo {
+    width: 1500px;
+    height: 140px;
+    background: #f5f5f5;
+    color: #555;
+    display: flex;
+    box-sizing: border-box;
+    margin: 100px auto;
+    align-items: center;
+    padding: 50px;
+}
+.innerInfo h5 {
+    margin-right: 80px;
+    position: relative;
+}
+.innerInfo h5::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 18px;
+    background: #888;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+}
+.innerInfo p {
+    margin-right: 20px;
+}
+.innerInfo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/* 제일하단 */

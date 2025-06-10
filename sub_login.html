@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.3/xeicon.min.css"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <style></style>
+        <link rel="stylesheet" href="./css/login.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="wrap">
+            <div class="inner">
+                <!-- 왼쪽 로고 영역 -->
+
+                <div class="left">
+                    <img src="./images/logo" alt="휘창 로고" />
+                </div>
+                <!-- 오른쪽 로그인 폼 영역 -->
+                <div class="right">
+                    <a href="index.html"><i class="xi-close"></i></a>
+                    <h3>로그인</h3>
+                    <ul>
+                        <li>
+                            <i class="xi-user"></i>
+                            <input
+                                type="text"
+                                id="userid"
+                                name="userid"
+                                placeholder="아이디 또는 학번을 입력해주세요"
+                                class="w380"
+                            />
+                        </li>
+                        <li>
+                            <i class="xi-eye-o"></i>
+                            <input
+                                type="password"
+                                name="userpw"
+                                id="userpw"
+                                placeholder="비밀번호를 입력해주세요"
+                                class="w380"
+                            />
+                        </li>
+                    </ul>
+                    <button class="btn w380">로그인</button>
+                    <div>
+                        <label><input type="checkbox" name="saveid" /> 아이디 저장</label>
+                        <span><a href="#">아이디·비밀번호 찾기</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/common.js"></script>
+    </body>
+</html>
